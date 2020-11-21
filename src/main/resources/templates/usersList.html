@@ -15,9 +15,25 @@
 <div class="container text-center">
     <div> <h1> List of users </h1> </div>
     <br>
-    <div> <a th:href="@{/list_users}"> list des users </a> </div>
-    <div> <a th:href="@{/signup}"> S'inscrire </a> </div>
-    <div> <a th:href="@{/login}"> Connecte-toi </a> </div>
+    <div>
+        <table class="table table-stripped table-bordered" >
+            <thread>
+                <tr>
+                    <th> User ID </th>
+                    <th> Email </th>
+                    <th> Firstname </th>
+                    <th> Lastname </th>
+                </tr>
+            </thread>
+            <tbody>
+            <tr th:each="user: ${listUsers}"> </tr>
+                <td th:text="${user.id}"> ID du user </td>
+                <td th:text="${user.email}"> Email du user </td>
+                <td th:text="${user.firstname}"> Prénom du user </td>
+                <td th:text= "${user.lastname}"> Nom du user </td>
+            </tbody>
+        </table>
+    </div>
 
 </div>
 

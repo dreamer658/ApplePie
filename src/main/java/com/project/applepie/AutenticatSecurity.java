@@ -53,7 +53,7 @@ public class AutenticatSecurity extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                     .usernameParameter("email")
-                    .defaultSuccessUrl("/list_user")
+                    .defaultSuccessUrl("/list_users")
                 .permitAll()
                 .and()
                 .logout().logoutSuccessUrl("/").permitAll();
