@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -18,6 +18,32 @@
     <div> <a th:href="@{/list_users}"> list des users </a> </div>
     <div> <a th:href="@{/signup}"> S'inscrire </a> </div>
     <div> <a th:href="@{/login}"> Connecte-toi </a> </div>
+
+    <div> <h1> List of users </h1> </div>
+    <br>
+    <div>
+        <table class="table table-stripped table-bordered" >
+            <thread>
+                <tr>
+                    <th> Titre </th>
+                    <th> Auteur </th>
+                    <th> Editeur </th>
+                    <th> Prix </th>
+                    <th> Quantite </th>
+                </tr>
+            </thread>
+            <tbody>
+            <tr th:each="book : ${listBooks}">
+            <td th:text="${book?.name}"> Titre </td>
+            <td th:text="${book?.author}"> Autheur </td>
+            <td th:text="${book?.editor}"> Editeur </td>
+            <td th:text="${book?.price}"> Prix </td>
+            <td th:text="${book?.quantity}"> Quantite </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
 
 </div>
 
