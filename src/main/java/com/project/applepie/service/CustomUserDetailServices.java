@@ -1,7 +1,7 @@
 package com.project.applepie.service;
 
-import com.project.applepie.model.CustomUserDetails;
-import com.project.applepie.model.UserRepository;
+import com.project.applepie.details.CustomUserDetails;
+import com.project.applepie.repository.UserRepository;
 import com.project.applepie.model.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

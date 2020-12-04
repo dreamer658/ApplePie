@@ -74,6 +74,7 @@
 			<version>2.0.1.Final</version>
 		</dependency>
 
+
 	</dependencies>
 
 	<build>
@@ -82,7 +83,10 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 		</plugins>
+
+
 	</build>
 
 </project>

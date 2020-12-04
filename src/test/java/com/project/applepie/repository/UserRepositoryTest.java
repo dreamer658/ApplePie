@@ -1,6 +1,9 @@
-package com.project.applepie.model;
+package com.project.applepie.repository;
 
 import static  org.assertj.core.api.Assertions.assertThat;
+
+import com.project.applepie.repository.UserRepository;
+import com.project.applepie.model.Users;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;

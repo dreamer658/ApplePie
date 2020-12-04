@@ -26,11 +26,12 @@
                 </tr>
             </thread>
             <tbody>
-            <tr th:each="user: ${listUsers}"> </tr>
+            <tr th:each="user: ${listUsers}">
                 <td th:text="${user.id}"> ID du user </td>
                 <td th:text="${user.email}"> Email du user </td>
                 <td th:text="${user.firstname}"> Prénom du user </td>
                 <td th:text= "${user.lastname}"> Nom du user </td>
+            </tr>
             </tbody>
         </table>
     </div>
