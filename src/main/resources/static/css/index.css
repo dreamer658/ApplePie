@@ -1,0 +1,15 @@
+.book-card{
+    width: 200px;
+}
+
+.book-card img{
+    width: 200px;
+    height: 250px;
+}
+.book-card-title > h5 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
